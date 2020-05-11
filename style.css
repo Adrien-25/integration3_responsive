@@ -51,6 +51,8 @@
 /*Style de caractère*/
 body{
     font-family: 'Nunito-Regular';
+    padding: 0;
+    margin: 0;
 }
 h1, .number_price, h2, h3, h4{
     font-family:'Poppins-Bold';
@@ -76,6 +78,14 @@ p{
     font-size:1.125rem;
     color:#716C80;
     line-height: 1.6875rem;
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
 }
 
 .nunito_black{
@@ -95,6 +105,10 @@ p{
 }
 .poppins_regular{
     font-family: 'Poppins-Regular';
+}
+.list-style_none{
+    list-style: none;
+    padding-left: 0;
 }
 
 /*Couleur de caractère*/
@@ -118,9 +132,62 @@ p{
 .flex-bettween{
 	justify-content: space-between;
 }
+.flex-around{
+    justify-content:space-around
+}
 .flex-align-center{
 	align-items: center;
 }
+.justify-center{
+    justify-content: center;
+}
 .flex-end{
 	justify-content: flex-end;
+}
+.align-end{
+    align-items: flex-end;
+}
+
+
+/*largeur et hauteur*/
+.h-100{
+    height:100%;
+}
+
+/*Mise en page*/
+.header_layout{
+    height: 69.69px;
+    width:71.25rem;
+}
+.nav-brand{
+    width:119px;
+    height: 39.69px;
+}
+.text_brand{
+    font-size: 1rem;
+}
+.navbar{
+    width:30.0625rem;
+    margin-left: 2.5625rem;
+    padding-bottom:2.69px;
+}
+.header_link>li>a{
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    width: 5rem;
+    justify-content: center;
+}
+.header_link>li :hover{
+    border-top:solid #6852ED 5px ;
+    box-sizing: border-box;
+    font-family: 'Nunito-Bold';
+    font-size:1.0625rem;
+    color:#554D89;
+
+}   
+.header_link_layout{
+    height:67px;
 }
