@@ -104,3 +104,17 @@ p{
 .text_red{
     color:#EF7171;
 }
+
+/*flex*/
+.d-flex{
+	display:flex;
+}
+.flex-bettween{
+	justify-content: space-between;
+}
+.flex-align-center{
+	align-items: center;
+}
+.flex-end{
+	justify-content: flex-end;
+}
