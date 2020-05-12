@@ -121,6 +121,9 @@ a{
 .text_size{
     font-size: 1rem;
 }
+.text-center{
+    text-align: center;
+}
 
 
 /*Couleur de caractère*/
@@ -202,7 +205,6 @@ a{
     font-family: 'Nunito-Bold';
     font-size:1.0625rem;
     color:#554D89;
-
 }   
 .header_link_layout{
     height:67px;
@@ -284,4 +286,30 @@ a{
     height:3.125rem;
     width:11.8125rem;
     margin-bottom: 3.75625rem;
+}
+
+
+/*TÉMOIGNAGE*/
+.testimonial{
+    padding:6.1875rem 0 4.75rem 0;
+    width:46.875rem;
+    
+}
+.testimonial_layout{
+    background-color: rgba(225,228,237,0.3);
+}
+.testimonial>header{
+    padding-bottom: 1.3125rem;
+}
+.testimonial_photo{
+    height: 6.25rem;
+    width: 6.25rem;  
+    padding:2.375rem 0 0.8125rem 0;
+}
+.testimonial_photo>img{
+    background-color: #6852ED;
+    border-radius: 100%;
+}
+.testimonial :nth-child(5){
+    padding-top:0.5625rem;
 }
