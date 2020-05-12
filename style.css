@@ -229,3 +229,19 @@ a{
 .intro_links :last-child{
     line-height:1.5rem;
 }
+.header_deco{
+    height:1452.28px;
+    width:1435.1px;
+    position: absolute;
+    right:-352px;
+    top:-452px;
+    overflow: hidden;
+    
+}
+.header_deco>div{
+    height:1369px;
+    width:673px;
+    transform: rotate(44deg);
+    background-color: #6852ed;
+    border-radius: 336.5px;
+}
