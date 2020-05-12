@@ -51,12 +51,15 @@
 /*Style de caractère*/
 body{
     font-family: 'Nunito-Regular';
+    font-size: 16px;
     padding: 0;
     margin: 0;
 }
 h1, .number_price, h2, h3, h4{
     font-family:'Poppins-Bold';
     color: #554D89;
+    margin:0;
+    padding: 0;
 }
 h1, .number_price{
     font-size: 3.125rem;
@@ -97,10 +100,10 @@ a{
 .nunito_regular{
     font-family: 'Nunito-Regular';
 }
-.poppins_regular{
+.poppins_bold{
     font-family: 'Poppins-Bold';
 }
-.poppins_regular{
+.poppins_medium{
     font-family: 'Poppins-Medium';
 }
 .poppins_regular{
@@ -147,6 +150,9 @@ a{
 .align-end{
     align-items: flex-end;
 }
+.flex-column{
+    flex-direction: column;
+}
 
 
 /*largeur et hauteur*/
@@ -155,7 +161,9 @@ a{
 }
 
 /*Mise en page*/
-.header_layout{
+
+/*HEADER*/
+.navbar_layout{
     height: 69.69px;
     width:71.25rem;
 }
@@ -190,4 +198,34 @@ a{
 }   
 .header_link_layout{
     height:67px;
+}
+
+
+
+/*SLIDER*/
+.intro_layout{
+    width:71.25rem;
+    padding: 18.4375rem 0 21.4375rem 0;
+}
+.intro_content{
+    width: 27.25rem;
+}
+.intro_content>p{
+    padding:0.875rem 0 3rem 0;
+    font-size:1.375rem;
+    line-height:2.0625rem;
+}
+.intro_links{
+    padding-bottom: 1.0625rem;
+}
+.intro_links :first-child{
+    height: 50px;
+    width: 207px;
+    background: rgb(104,82,237);
+    background: linear-gradient(45deg, rgba(104,82,237,1) 50%, rgba(186,67,252,1) 100%);
+    border-radius: 40px;
+    margin-right: 1.875rem;
+}
+.intro_links :last-child{
+    line-height:1.5rem;
 }
