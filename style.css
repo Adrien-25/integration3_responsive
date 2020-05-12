@@ -55,7 +55,7 @@ body{
     padding: 0;
     margin: 0;
 }
-h1, .number_price, h2, h3, h4{
+h1, .number_price, h2, h3, h4,.title_4{
     font-family:'Poppins-Bold';
     color: #554D89;
     margin:0;
@@ -73,11 +73,11 @@ h3{
     font-size: 1.375rem;
     line-height:2.0625rem;
 }
-h4{
+h4, .title_4{
     font-size: 1.25rem;
     line-height:1.875rem;
 }
-p{
+p,li{
     font-size:1.125rem;
     color:#716C80;
     line-height: 1.6875rem;
@@ -90,6 +90,11 @@ ul{
 a{
     text-decoration: none;
 }
+.text_basic{
+    font-size: 1rem;
+    line-height: 1.3125rem;
+}
+
 
 .nunito_black{
     font-family: 'Nunito-Black';
@@ -113,6 +118,10 @@ a{
     list-style: none;
     padding-left: 0;
 }
+.text_size{
+    font-size: 1rem;
+}
+
 
 /*Couleur de caractère*/
 .text_white{
@@ -180,8 +189,7 @@ a{
     padding-bottom:2.69px;
 }
 .header_link>li>a{
-    font-size: 1rem;
-    line-height: 1.3125rem;
+    
     height: 100%;
     display: flex;
     align-items: flex-end;
@@ -199,10 +207,6 @@ a{
 .header_link_layout{
     height:67px;
 }
-
-
-
-/*SLIDER*/
 .intro_layout{
     width:71.25rem;
     padding: 18.4375rem 0 21.4375rem 0;
@@ -221,10 +225,12 @@ a{
 .intro_links :first-child{
     height: 50px;
     width: 207px;
+    margin-right: 1.875rem;
+}
+.button_purple{
     background: rgb(104,82,237);
     background: linear-gradient(45deg, rgba(104,82,237,1) 50%, rgba(186,67,252,1) 100%);
     border-radius: 40px;
-    margin-right: 1.875rem;
 }
 .intro_links :last-child{
     line-height:1.5rem;
@@ -244,4 +250,37 @@ a{
     transform: rotate(44deg);
     background-color: #6852ed;
     border-radius: 336.5px;
+}
+
+
+/*PRICE*/
+.price_content{
+    width:71.25rem;
+}
+.price_column{
+    width:22.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #E1E4ED;
+}
+.price_column>div{
+    padding:63px 71px 57.9px 59px;
+}
+.price_deco{
+    margin:1rem 0 1rem 0;
+    height: 2px;
+    width:2.5rem;
+    background-color: #BA43FC;
+    border-radius: 2px;
+}
+.price_list {
+    padding: 3.5rem 0 0 1.8rem;
+}
+.price_list>li{
+    list-style: none;
+    padding-bottom: 0.625rem;
+}
+.price_column>a{
+    height:3.125rem;
+    width:11.8125rem;
+    margin-bottom: 3.75625rem;
 }
