@@ -256,6 +256,7 @@ a{
 /*PRICE*/
 .price_content{
     width:71.25rem;
+    margin-bottom: 7.5rem;
 }
 .price_column{
     width:22.5rem;
