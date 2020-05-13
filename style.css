@@ -259,6 +259,7 @@ body{
     right:-352px;
     top:-452px;
     overflow: hidden;
+    z-index: -1;
     
 }
 .header_deco>div{
@@ -315,10 +316,13 @@ body{
 .testimonial{
     padding:6.1875rem 0 4.75rem 0;
     width:46.875rem;
-    
+    margin:auto;
+
 }
 .testimonial_layout{
-    background-color: rgba(225,228,237,0.3);
+    align-items: flex-end;
+    background: linear-gradient(to right,rgba(225,228,237,0.3),rgba(225,228,227,0.3)),url(images/Bg.png);
+    background-repeat: no-repeat;
 }
 .testimonial>header{
     padding-bottom: 1.3125rem;
@@ -335,6 +339,7 @@ body{
 .testimonial :nth-child(5){
     padding-top:0.5625rem;
 }
+
 
 
 /*SERVICES*/
