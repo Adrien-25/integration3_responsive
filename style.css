@@ -441,6 +441,7 @@ footer>form{
     border-radius: 0.625rem;
     padding: 1.875rem 1.875rem 1.875rem 5.1875rem;
     margin-bottom: 6.25rem;
+    width:59.375%;
 }
 footer>form>p{
     font-size:1.375rem;
@@ -516,4 +517,109 @@ footer>form>p{
 }
 .legal_text *{
     font-size:0.875rem;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width:1200px){
+    .header_deco{
+        display: none;
+    }
+    .w-content{
+        width:90%;
+    }
+    .navbar_layout{
+        justify-content: space-around;
+    }
+    .intro_layout{
+        justify-content: center;
+        padding:9rem 0 10rem 0;
+    }
+    
+    .price_column{
+        width: auto;
+    }
+    
+    .services_layout{
+        flex-direction: column;
+    }
+    .services_tab{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .services_text{
+        margin:auto;
+    }
+    .services_text>a{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .services_text>header{
+        margin-top:2rem;
+    }
+    .community_layout{
+        flex-direction: column;
+    }
+    .community_photo{
+        margin-bottom: 2rem;
+    }
+    footer>form{
+        margin-bottom: 3rem;
+    }
+    .footer_container{
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: solid 1px #716C80;
+        padding-bottom: 2rem;
+    }
+    .about{
+        margin: 0 266.4px 0 266.4px ;
+    }
+    .legal_text{
+        justify-content: center;
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1200px){
+    .price_column>div{
+        padding: 20px;
+    }
+    .price_column>a{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width:992px) {
+    .price_column>div{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .price_column>div>div{
+        justify-content: space-evenly;
+    }
+    .best_price{
+        margin:0;
+    }
+    .price_column{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .price_list{
+        padding-left:0;
+    }
+    .price_deco{
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .tab_content{
+        width:20rem;
+    }
+    .footer_line{
+        width:20rem;
+    }
+    .contact,.footer_links{
+        margin-top: 2rem;
+    }
+}
+@media only screen and (max-width:668px) {
+
 }
