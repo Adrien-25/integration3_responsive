@@ -98,6 +98,11 @@ a{
     font-size: 1rem;
     line-height: 1.3125rem;
 }
+button{
+    background-color: inherit;
+    border: inherit;
+    box-sizing: content-box;
+}
 
 
 .nunito_black{
@@ -569,7 +574,7 @@ footer>form>p{
     .footer_container{
         flex-wrap: wrap;
         justify-content: center;
-        border-bottom: solid 1px #716C80;
+        border-bottom: solid 1px #D8D8D8;
         padding-bottom: 2rem;
     }
     .about{
@@ -589,8 +594,10 @@ footer>form>p{
 }
 @media only screen and (max-width:992px) {
     .price_column>div{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding:40px 10px 20px 10px;
+    }
+    .price_column>a{
+        margin-bottom: 50px;
     }
     .price_column>div>div{
         justify-content: space-evenly;
@@ -620,6 +627,182 @@ footer>form>p{
         margin-top: 2rem;
     }
 }
-@media only screen and (max-width:668px) {
+
+
+.navbar-wrapper{
+    margin: 1rem auto 0 auto;
+    padding: 20px 20px 20px 20px;
+    height: 32px;
+    width:50px;
+    cursor: pointer;
+    display: none;
+}
+.hamburger-menu,.hamburger-menu:after,.hamburger-menu:before{
+  width: 50px;
+  height: 2px;
+  border-radius: 2px;
+}
+.hamburger-menu{ 
+  position: relative;
+  background: rgb(0, 0, 0);
+  transition: all 0ms 400ms;
+}
+  .hamburger-menu.active{
+    background: rgba(255, 255, 255, 0);
 
 }
+.hamburger-menu:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  background: rgb(0, 0, 0);
+  transition: bottom 400ms 400ms cubic-bezier(0.23, 1, 0.32, 1), transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hamburger-menu:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  background: rgb(0, 0, 0);
+  transition: top 400ms 400ms cubic-bezier(0.23, 1, 0.32, 1), transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+/*Animaciones*/
+
+.hamburger-menu.active:before{
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 400ms cubic-bezier(0.23, 1, 0.32, 1), transform 400ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
+} 
+.hamburger-menu.active:after{
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 400ms cubic-bezier(0.23, 1, 0.32, 1), transform 400ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+@media only screen and (max-width:700px) {
+    .price_content{
+        flex-direction: column;
+    }
+    .services_tab{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services_text{
+        width:90%;
+    }
+    .community_photo{
+        width:300px;
+        height:271px;
+    }
+    .community_text{
+        width:100%;
+    }
+    footer>form{
+        flex-direction: column;
+        text-align: center;
+        padding:1.875rem;
+        width: unset;
+    }
+    form>p{
+        justify-content: center;
+    }
+    .about{
+        text-align: center;
+    }
+    .nav-brand{
+        margin:auto;
+    }
+    .contact{
+        text-align: center;
+        margin-right: 0;
+    }
+    .contact>ul{
+        padding:0;
+    }
+    .title_4{
+        text-align: center;
+    }
+    .footer_links{
+        width: inherit;
+    }
+    .legal_text{
+        text-align: center;
+    }
+    .intro_links :first-child{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .intro_links{
+        flex-direction: column;
+    align-items: center;    
+    }
+    .intro_links :last-child{
+        justify-content: center;
+    }
+    
+    /*Responsive header*/
+    .navbar{
+        width: inherit;
+        margin-left: inherit;
+    }
+    .navbar_layout{
+        flex-direction: column;
+        margin-top: 1rem;
+        height: inherit;
+        align-items: center;
+    }
+    .navbar-wrapper{
+        display: block;
+    }
+    .header_link{
+        align-items: center;
+        display: none;
+        position: absolute;
+        height: 400px;
+        flex-direction: column;
+        top: 130px;
+        width:100vh;
+        background-color: grey;
+    }
+    .header_link>li>a{
+        color:white;
+        font-size:1.5rem;
+    }
+    .header_link>li{
+        height: initial;
+    }
+    .header_link>li>a{
+        padding:5px 0 5px 0;
+    }
+    .intro_layout{
+        padding:0;
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+    .header_link.active{
+        display: block;
+    }
+    .navbar_wrapper:active ~ .header_link{
+        display: block;
+    }
+    .tab_content>section{
+        background: linear-gradient(45deg, rgba(104,82,237,1) 0%, rgba(186,67,252,1) 100%);
+        padding-top: 2.875rem;
+        padding-bottom: 2.5625rem;
+    }
+    .tab_content *{
+        color: white;
+    }
+    .text_hover{
+        display: block;
+        margin-top: 1.9375rem;
+    }
+}
+
+
+
+
+    
